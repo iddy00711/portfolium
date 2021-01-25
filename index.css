@@ -324,7 +324,7 @@
     left:49vw;
     width:4px;
     height:25px;
-    background: antiquewhite;
+    background: rgb(253, 253, 253);
     transition: 2s;
     transform: rotate(var(--rotation-value-left));
     border-radius: 9999px;
@@ -336,7 +336,7 @@
     
     width:4px;
     height:25px;
-    background: antiquewhite;
+    background: rgb(253, 253, 253);
     transition: 2s;
     transform: rotate(50deg) ;
     position: absolute;
@@ -349,7 +349,7 @@
   #arrow-left::after{
     width:4px;
     height:30px;
-    background: antiquewhite;
+    background: rgb(253, 253, 253);
     transition: 2s;
     position: absolute;
     margin: 0px;
