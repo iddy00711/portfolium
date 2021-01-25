@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+    overflow: hidden;
+}
+
+#gameBackGround{
+    width:100vw;
+    height:100vh;
+    /* position: relative; */
+    /* border-radius: 10px;
+    border: 10px solid gray; */
+    /* top:10vh;
+    left:20vw; */
+}
+
+/* #sky{
+    width: 100%;
+    height: 70%;
+    background-color: aqua;
+    top:0vh;
+}
+
+#ground{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(80, 35, 6);
+    bottom: 0vh;
+
+} */
+#baby-yoda{
+   position: relative;
+   top:0px;
+   left:0px;
+    
+  
+  }
+  #baby-yoda-pic{
+    width:300px;
+    height:300px;
+    position: absolute;
+    image-rendering: pixelated;
+    top:auto;
+    left:auto;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  #cloud{
+    width:100px;
+    height:100px;
+    position:absolute;
+    image-rendering: pixelated;
+    top:14.8vh;
+    left:4vw;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+  }
+  #vader{
+      position: absolute;
+      width:500px;
+      height: 500px;
+      top:20vh;
+      left: 67vw;
+      animation: vaderMotion 5s infinite alternate-reverse;
+  }
+
+  #lightening{
+      position: absolute;
+      top:109px;
+      right:440px;
+      z-index: 0;
+      transform: rotateY(0deg);
+      animation: lightStrike 5s infinite  alternate-reverse;
+
+  }
+  #text-container{
+      position: absolute;
+      bottom: 31vh;
+      right:13.5vw;
+      width: 260px;
+      height: 65px;
+      border: 2px solid gray;
+      border-radius: 19px;
+      padding: 0px 10px;
+      margin-top: 50px;
+
+    opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: vaderMotion 5s infinite alternate-reverse;
+      
+      
+    
+  }
+  .text{
+      text-align:justify;
+      opacity: 1;
+      color: antiquewhite;
+      font-family: 'VT323';
+      font-size: 1.5rem;
+      word-spacing: -1px;
+  }
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:79vh;
+    left:50vw;
+    opacity: 0.9;
+    width:7rem;
+    height: 1.8rem;
+    background: #6dd1eb;
+    border-radius: 9999px;
+    padding: 0px 2px 5px;
+    animation: showButton 30s;
+    cursor: pointer;
+    font-family: 'VT323';
+    font-size: 1.3rem;
+    transition: 0.5s;
+    border: 2px solid gray;
+  }
+  button:hover{
+    color: antiquewhite;
+    background: #000;
+    box-shadow: inset 0 0 100px black;
+    border: 2px solid gray;
+    /* box-shadow: inset 0px 0px 0 3px black, 0px 0px 0px 0px #6dd1eb; */
+   
+
+}
+  @keyframes lightStrike{
+      0%{
+          opacity: 1;
+          transform: translateY(0px) rotate(0deg);
+      }
+      100%{
+          opacity: 0;
+          transform: translateY(100px) rotate(0deg);
+      }
+  }
+  @keyframes vaderMotion{
+      0%{
+          transform: translateY(0px);
+      }
+      100%{
+        transform: translateY(100px);
+      }
+  }
+  @keyframes textFade{
+      0%{
+          opacity: 0.9;
+      }
+      100%{
+          opacity: 0;
+      }
+  }
+  @keyframes changeButtonColor{
+      0%{
+
+      }
+      100%{
+          background: #000;
+          color: antiquewhite;
+      }
+  }
+  @keyframes buttonFadeIn{
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }

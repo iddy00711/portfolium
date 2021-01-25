@@ -1,0 +1,114 @@
+
+
+body {
+   margin: 0;
+   padding: 0;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  /* .fade {
+    position: relative;
+    width: 100%;
+    
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  } */
+  
+  .star-wars-text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #6dd1eb;
+    font-family: 'VT323';
+    font-size: 5rem;
+    font-weight: 570;
+    letter-spacing: 4px;
+    line-height: 100px;
+    perspective: 400px;
+    text-align: justify;
+    
+    
+  }
+  
+  .scroll-container {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: scroll 80s linear;
+  }
+  
+   .title {
+    font-size: 7rem;
+    text-align: center;
+  }
+  
+   h1 {
+    margin: 0 0 100px;
+
+    
+  }
+  p{
+    text-shadow: 0 0 5px rgb(196, 32, 147);
+    
+  }
+  #title-text{
+    text-shadow: 0 0 0px #6dd1eb;
+  }
+
+  button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top:79vh;
+      left:50vw;
+      opacity: 0.9;
+      width:7rem;
+      height: 1.8rem;
+      background: #6dd1eb;
+      border-radius: 9999px;
+      padding: 0px 2px 5px;
+      animation: showButton 31s;
+      cursor: pointer;
+      font-family: 'VT323';
+      font-size: 1.3rem;
+      transition: 0.5s;
+
+  }
+  #nextButton:hover{
+      color: antiquewhite;
+      background: #000;
+      opacity: 1;
+      /* box-shadow: inset 0px 0px 0 3px black, 0px 0px 0px 0px #6dd1eb; */
+     
+
+  }
+
+
+  
+  @keyframes scroll {
+    0% {
+      top: 0;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+
+  @keyframes showButton{
+      0%{
+          opacity: 0;
+          
+      }
+      50%{
+        opacity: 0;
+    }
+      100%{
+          opacity: 1;
+      }
+  }

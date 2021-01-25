@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= 'stylesheet' href='gamePgae.css'>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel='stylesheet'>
+</head>
+<body>
+    
+
+    <div id='gameBackGround'>
+        
+        <div id='ground'>
+            <div id='baby-yoda'>
+
+                <img id='baby-yoda-pic'  src='./assets/babyyoda.png' onkeypress="moveBabyYodaGame()"/>
+                <img id='cloud'  src='./assets/cloud10.png'/>
+            </div>
+            
+
+        </div>
+        <img style="height: 100vh; width: 100vw; opacity: 0.1; z-index: -1;" src='./assets/stars.jpeg'>
+        <div id='vader-container'></div>
+        <img id='vader' style="width: 500px; height: 500px; display:inline; right:10px; top:200px" src='./assets/vader.png'/>
+        <img id='lightening' style="width: 500px; height: 500px; display:inline;"  src='./assets/lightening.png'/>
+        <div id='text-container'>
+            <div class= 'text'>  Darth Vader on a Charazard. Your arguement is invalid!</div>
+            
+        </div>
+    </div>
+    
+</body>
+<script src='index.js'></script>
+</html>
