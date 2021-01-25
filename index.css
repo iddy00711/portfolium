@@ -178,15 +178,14 @@
 }
 
 .letter:hover{
-    color: blueviolet;
-    animation: letterAnimation 2s infinite;
-    opacity: 0;
+  
+    animation: letterAnimation 3s infinite;
 }
 
 @keyframes letterAnimation{
-    0%{width:100px; height: 100px; background: red;}
-    50%{width:100px; height: 100px; background: red;}
-    100%{width:100px; height: 100px; background: red;}
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
 
 }
 
