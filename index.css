@@ -179,7 +179,7 @@
 
 .letter:hover{
   
-    animation: letterAnimation 3s infinite;
+    animation: letterAnimation 2s infinite linear;
 }
 
 @keyframes letterAnimation{
