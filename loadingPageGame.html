@@ -7,7 +7,7 @@
     <link rel = 'stylesheet' href='loadingPgae.css'>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel='stylesheet'>
 </head>
-<body onmouseover="loadingPageGame()">
+<body>
     <div id = 'loading-text'>
         Loading...
     </div>
@@ -15,6 +15,13 @@
 
     </div>
     
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            window.location.replace('./gamePage.html');
+        }, 3200);
+    });
+</script>
 </body>
 <script src = 'index.js'></script>
 </html>

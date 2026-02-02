@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href='project.css'>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel='stylesheet'>
+</head>
+<body>
+    
+
+    
+</body>
+<script>
+  const div_arr = [
+    "C13/C14 Calculator",
+    "Road works API",
+    "ML Customer Prediction",
+    "Binaric Static Generator",
+    "Chef Robotiks"
+  ];
+
+  for(i=0; i<div_arr.length;i++){
+    let div = document.createElement('div');
+
+    div.className = 'project-card';
+    div.innerHTML = `${div_arr[i]}`;
+    div.style.top = `${20 + i*15}vh`;
+    div.style.left = '30vw';
+    div.onclick = ()=>{
+      alert(`You clicked on ${div_arr[i]} project card! More details coming soon.`);
+    }
+    div.style.position = 'absolute';
+    div.style.padding = '20px';
+    div.style.fontSize = '44px';    
+    div.style.color = 'rgb(10, 200, 200)';
+    //div.style.background = 'white';
+    div.style.opacity = '0.99';
+    div.style.zIndex = '10';
+    document.body.appendChild(div);
+  }
+</script>
+<script src='index.js'></script>
+
+</body>
+</html>

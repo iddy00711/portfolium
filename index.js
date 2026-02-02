@@ -1,39 +1,27 @@
-// const arrow_container = document.getElementById('arrow-container');
-
-
-
-
-// mouseOut = function () {
-//     let opacity = 1;
-
-//     var elem = document.getElementById('top-letter')
-//     console.log(elem.style.borderRadius)
-    
-//     setInterval(()=>{
-//         opacity = opacity - 0.05
-//         elem.style.opacity = opacity;
-//     }, 100)
-
-// }
 
 
 const vaderHealhArr = [...Array(10).keys()]
+//const div_arr = ["C13/C14 Calculator", "Road works API", "ML Customer Prediction", "Binaric Static Generator", "Chef Robotiks"]
 
-function loadingPage(){
-    setTimeout(()=>{
-        window.location.replace('./textScrollSW.html')
+function redirectAfterDelay(target, ms = 1000) {
+  
+  window.__redirectScheduled = true;
 
-    }, 3000)
-    
+  setTimeout(() => window.location.replace(target), ms);
 }
 
-function loadingPageGame(){
-    setTimeout(()=>{
-        window.location.replace('./gamePage.html')
+document.addEventListener("DOMContentLoaded", () => {
+  const page = window.location.pathname.split("/").pop();
 
-    }, 3000)
+  if (page === "loadingPage.html") {
+    redirectAfterDelay("./textScrollSW.html", 1500);
+  }
 
-}
+  if (page === "loadingPageGame.html") {
+    redirectAfterDelay("./gamePage.html", 1500);
+  }
+});
+
 function loadingPagePortfol(){
     // setTimeout(()=>{
     //     window.location.replace('./gamePage.html')
@@ -223,18 +211,9 @@ function moveYoda(e){
             console.log(vader.style.right)
                     
             setInterval(()=>{
-                console.log(energyBall.style.top)
-
-               
+                //console.log(energyBall.style.top)
 
                 x = x+30
-
-                
-                
-
-           
-        
-
                 
 
              
@@ -272,13 +251,37 @@ function moveYoda(e){
                    }, 3000)
                    
                    setTimeout(()=>{
+                       for(let i=0; i<5; i++){
+                        let div = document.createElement('div');
 
-                       var button = document.createElement('button');
+                        div.style.width = '65px';
+                        div.style.height = '65px';
+                        div.style.position = 'absolute';
+                        div.style.bottom = `${Math.random() * 38}vh`;
+                        div.style.right = `${Math.random() * 38}%`;
+                        div.style.background = `rgb(
+                                                    ${40+ Math.random() * 250},
+                                                    ${ Math.random() * 55},
+                                                    ${Math.random() * 10}
+                                                    )`;
+
+                        div.style.borderRadius = '50%';
+                        div.style.animation = 'buttonFadeIn 1s linear';
+                                           setTimeout(()=>{
+
+                    div.remove()
+
+                   }, 350)
+                     
+                        document.body.appendChild(div)
+                       }
+
+                       let button = document.createElement('button');
                        button.style.width = '100px';
                        button.style.height = '50px';
                        button.style.position = 'absolute';
-                       button.style.top = ' 750px';
-                       button.style.left = '850px';
+                       button.style.top = '85vh';
+                       button.style.left = '45vw';
                        button.style.background = 'lightblue';
                        button.style.borderRadius = '9999px';
                        button.style.opacity = '1'
@@ -287,7 +290,7 @@ function moveYoda(e){
        
                        button.innerHTML = 'Finish';
                        button.onclick = ()=>{
-                        window.location.replace('./index.html')
+                        window.location.replace('./project.html')
                           
                        }
                           document.body.appendChild(button)

@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = 'stylesheet' href='loadingPgae.css'>
+    <link rel = 'stylesheet' href='loadingPage.css'>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel='stylesheet'>
 </head>
-<body onmouseover="loadingPage()">
+<body>
     <div id = 'loading-text'>
         Loading...
     </div>
     <div id='loader'>
 
     </div>
-    
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            window.location.replace('./textScrollSW.html');
+        }, 2000);
+    });
+</script>
 </body>
 <script src = 'index.js'></script>
 </html>

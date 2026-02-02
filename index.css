@@ -19,10 +19,10 @@
 
 #baby-yoda{
   width:300px;
-  height:300px;
+  height:27x;
   position:absolute;
   image-rendering: pixelated;
-  top:81.8vh;
+  top:69vh;
   left:43vw;
   z-index: 2;
   margin: 0;
@@ -139,7 +139,7 @@
 
 
 .intials{
-    position:'relative';
+    position:static
 }
 
 .letter{
@@ -208,10 +208,12 @@
     
     
   .content__container__list {
+      position: absolute;
       font-weight: 600;
       overflow: hidden;
       height: 45px;
-      padding: 0 40px;
+      padding: 20px, 20px, 20px, 20px;
+      margin: 25px;
     }
   
     
@@ -314,7 +316,13 @@
   }
 
   .button-container{
-    position:relative;
+    position:absolute;
+    top:-10vh;
+    left:2vw;
+    transition: all 0.5s ease-out allow-discrete;
+    height: 40px;
+    width: 100px;
+    
   }
 
   #arrow-left{
@@ -325,7 +333,7 @@
     width:4px;
     height:25px;
     background: rgb(253, 253, 253);
-    transition: 2s;
+    transition: 3s;
     transform: rotate(var(--rotation-value-left));
     border-radius: 9999px;
     
@@ -430,6 +438,30 @@
     position: absolute;
     top:0px;
     left:69vw;
+    animation: starFall 1s 10s linear;
+  }
+    #star-three{
+    position: absolute;
+    top:0px;
+    left:60vw;
+    animation: starFall 5s infinite linear;
+  }
+  #star-four{
+    position: absolute;
+    top:0px;
+    left:69vw;
+    animation: starFall 1s 10s linear;
+  }
+  #star-five{
+    position: absolute;
+    top:0px;
+    left:78vw;
+    animation: starFall 1s 10s linear;
+  }
+  #star-six{
+    position: absolute;
+    top:0px;
+    left:87vw;
     animation: starFall 1s 10s linear;
   }
   .star{
