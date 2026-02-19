@@ -10,25 +10,19 @@ function redirectAfterDelay(target, ms = 1000) {
   setTimeout(() => window.location.replace(target), ms);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const page = window.location.pathname.split("/").pop();
+// document.addEventListener("DOMContentLoaded", () => {
+//   const page = window.location.pathname.split("/").pop();
 
-  if (page === "loadingPage.html") {
-    redirectAfterDelay("./textScrollSW.html", 1500);
-  }
+//   if (page === "loadingPage.html") {
+//     redirectAfterDelay("./textScrollSW.html", 1500);
+//   }
 
-  if (page === "loadingPageGame.html") {
-    redirectAfterDelay("./gamePage.html", 1500);
-  }
-});
+//   if (page === "loadingPageGame.html") {
+//     redirectAfterDelay("./gamePage.html", 1500);
+//   }
+// });
 
-function loadingPagePortfol(){
-    // setTimeout(()=>{
-    //     window.location.replace('./gamePage.html')
 
-    // }, 3000)
-
-}
 
 
 
@@ -64,8 +58,6 @@ function moveBabyYoda(){
 
     
     setInterval(()=>{
-        console.log(typeof(x))
-        
 
             x = x+0.35;
             opacity = opacity +0.01;
@@ -77,12 +69,9 @@ function moveBabyYoda(){
             }
             else{
                 window.location.replace('./loadingPage.html')
-            }
-        
-    
-        
+            }   
 
-    }, 20)
+    }, 10)
  
 
 
@@ -122,13 +111,10 @@ function moveUpDown(y_pos) {
 
 
     if(leftRightInt >= -60 && leftRightInt <= 1260){
-        console.log('here1')
         
-
         babyYoda.style.left = x_pos +'px';
     }
     if(leftRightInt <= -60){
-        console.log('here2')
         babyYoda.style.left = -59.5 + 'px';
     }
     if(leftRightInt > 1260){
@@ -416,11 +402,11 @@ starArrBlue.map((_, index)=>{
 })
 
 
-function gotToGamePage(){
+// function gotToGamePage(){
 
-    window.location.replace('./loadingPageGame.html')
+//     window.location.replace('./loadingPageGame.html')
 
-}
+// }
 
 function clampBabyYoda(id){
     
