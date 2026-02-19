@@ -14,14 +14,24 @@
 </body>
 <script>
   const div_arr = [
-    "C13/C14 Calculator",
+    "X-Ray Image Analysis AI project",
     "Road works API",
-    "ML Customer Prediction",
+    "ML Cafe Customer Prediction",
     "Binaric Static Generator",
     "Chef Robotiks"
   ];
 
-  for(i=0; i<div_arr.length;i++){
+  const div_link = [
+    "https://github.com/idrisdodwell00711/CNN-Xrays",
+    "https://road-works-byley.onrender.com",
+    "https://github.com/idrisdodwell00711/ML_project",
+    "https://github.com/idrisdodwell00711/ad_mech_binary",
+    "https://www.instagram.com/chefrobotiks?igsh=MWpiMTVxYzd2YjVpeA=="
+
+
+  ]
+
+  for(let i=0; i<div_arr.length;i++){
     let div = document.createElement('div');
 
     div.className = 'project-card';
@@ -29,7 +39,7 @@
     div.style.top = `${20 + i*15}vh`;
     div.style.left = '30vw';
     div.onclick = ()=>{
-      alert(`You clicked on ${div_arr[i]} project card! More details coming soon.`);
+      window.location.replace(`${div_link[i]}`);
     }
     div.style.position = 'absolute';
     div.style.padding = '20px';
