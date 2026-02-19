@@ -68,7 +68,7 @@ function moveBabyYoda(){
                 
             }
             else{
-                window.location.replace('./loadingPage.html')
+                window.location.replace('./gamePage.html')
             }   
 
     }, 10)
