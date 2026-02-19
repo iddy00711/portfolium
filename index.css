@@ -76,13 +76,13 @@
   align-items: center;
   justify-content: center;
   direction: flex;
-  padding: 5px;
+  padding: 3px;
   position: relative;
   top:84vh;
   left:35vw;
   border: 1px solid gray; 
   z-index: 3;
-  width: 170px;
+  width: 120px;
   height: 30px;
   opacity: 0;
   
